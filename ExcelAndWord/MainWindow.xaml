@@ -1,0 +1,19 @@
+﻿<Window x:Class="ExcelAndWord.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExcelAndWord"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Num" FontSize="20" Margin="296,115,434,278"/>
+        <TextBlock Text="Table" FontSize="20" Margin="363,115,367,278"/>
+        <TextBlock Text="Product" FontSize="20" Margin="420,115,296,276"/>
+        <TextBox x:Name="tbxNum" Text="C1" FontSize="20" Height="42" Margin="296,146,434,231"/>
+        <TextBox x:Name="tbxTable" Text="1" FontSize="20" Height="42" Margin="358,146,372,231"/>
+        <TextBox x:Name="tbxProduct" Text="Potato" FontSize="20" Height="42" Margin="420,146,310,231"/>
+        <Button x:Name="btnToExcel" Content="Export to excel" FontSize="20" Width="200" Height="42" Click="btnToExcel_Click"/>
+        <Button x:Name="btnToWord" Content="Export to word" FontSize="20" Width="200" Height="42" Margin="296,230,296,147" Click="btnToWord_Click"/>
+    </Grid>
+</Window>
